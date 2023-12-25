@@ -1,0 +1,100 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 169, 40);
+}
+main .sectionDiv {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 830px) {
+  main .sectionDiv {
+    margin-top: 5vh;
+    flex-direction: column;
+    height: 90vh;
+  }
+}
+main .sectionDiv div {
+  overflow: hidden;
+  width: 25vw;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding-bottom: 6vh;
+}
+@media screen and (max-width: 830px) {
+  main .sectionDiv div {
+    width: 65vw;
+    height: 80vh;
+  }
+}
+main .sectionDiv div i {
+  font-size: 6vw;
+}
+main .sectionDiv div p {
+  padding-top: 2vh;
+}
+main .sectionDiv .specialDiv {
+  width: 40vw;
+  height: 70vh;
+  background-color: rgb(0, 0, 52);
+}
+@media screen and (max-width: 830px) {
+  main .sectionDiv .specialDiv {
+    width: 65vw;
+    height: 80vh;
+  }
+}
+main .sectionDiv .specialDiv a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 10vh;
+  background-color: rgb(255, 169, 40);
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 5vh;
+}
+@media screen and (max-width: 830px) {
+  main .sectionDiv .specialDiv a {
+    width: 28vw;
+    height: 7vh;
+  }
+}
+@media screen and (max-width: 830px) {
+  main .sectionDiv .specialDiv h2 {
+    font-size: 4vw;
+  }
+}
+main .sectionDiv .specialDiv p {
+  color: white;
+}
+main .sectionDiv .specialDiv i {
+  padding-bottom: 3vw;
+  color: white;
+  font-size: 10vw;
+}
+@media screen and (max-width: 830px) {
+  main .sectionDiv .specialDiv i {
+    padding-top: 1vw;
+  }
+}/*# sourceMappingURL=contact.css.map */

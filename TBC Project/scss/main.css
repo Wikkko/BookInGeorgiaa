@@ -1,0 +1,643 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+header {
+  z-index: 999999999;
+  transition: height 0.3s ease-in-out;
+  border-bottom: 2px solid white;
+  height: 5vw;
+  background-color: rgb(255, 169, 40);
+}
+@media screen and (max-width: 1200px) {
+  header {
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    height: 20vw;
+  }
+}
+header nav {
+  transition: height 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 5vw;
+  color: white;
+  box-shadow: -2px 3px 14px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 3px 14px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 14px 4px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 1200px) {
+  header nav {
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  header nav {
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav {
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  header nav {
+    height: 20vw;
+  }
+}
+header .burger-menu {
+  z-index: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header .burger-menu i {
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 700px) {
+  header .burger-menu i {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .burger-menu i {
+    font-size: 7vw;
+  }
+}
+header .menu {
+  transform: translateY(-120vh);
+  background-image: url(../media/მწერლები.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  z-index: 0.5;
+}
+header .menu .menu-container {
+  background-color: rgba(205, 198, 198, 0.592);
+  margin-bottom: 10vw;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu .menu-container ul li {
+  padding-top: 2vw;
+  cursor: pointer;
+  font-size: 3vw;
+}
+header .menu .menu-container ul li:hover {
+  transform: scale(1.3);
+}
+@media screen and (max-width: 1000px) {
+  header .menu .menu-container ul li {
+    font-size: 5vw;
+    padding-top: 8vw;
+  }
+}
+header .menu .menu-container ul li a {
+  color: #000000;
+}
+
+.active {
+  margin-top: 120vh;
+  transition: 1s;
+}
+
+.shop a i {
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+.logo {
+  width: 15vw;
+  height: 95%;
+}
+.logo a img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 35vw;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  padding-top: 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1700px) {
+  main .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .container {
+    grid-template-columns: 1fr;
+  }
+}
+main .container .search-bar input {
+  height: 2vw;
+  width: 5vw;
+}
+main .container .search-bar button {
+  height: 2vw;
+  width: 2vw;
+}
+main .container .books {
+  border: 3px solid rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 5px;
+  width: 23vw;
+  height: 28vw;
+  margin: 2vw;
+}
+main .container .books:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media screen and (max-width: 1700px) {
+  main .container .books {
+    width: 30vw;
+    height: 35vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .container .books {
+    width: 34vw;
+    height: 40vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .container .books {
+    width: 60vw;
+    height: 70vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .container .books {
+    width: 80vw;
+    height: 90vw;
+    margin: 15vw 0 15vw 0;
+  }
+}
+main .container .books img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 23vw;
+  height: 20vw;
+  background-color: rgb(255, 169, 40);
+}
+@media screen and (max-width: 1700px) {
+  main .container .books img {
+    width: 30vw;
+    height: 25vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .container .books img {
+    width: 34vw;
+    height: 24vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .container .books img {
+    width: 60vw;
+    height: 45vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .container .books img {
+    width: 80vw;
+    height: 55vw;
+  }
+}
+main .container .books .textContainer {
+  width: 23vw;
+  height: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 3px solid black;
+}
+@media screen and (max-width: 1700px) {
+  main .container .books .textContainer {
+    width: 30vw;
+    height: 10vw;
+  }
+}
+main .container .books .textContainer h1, main .container .books .textContainer h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1700px) {
+  main .container .books .textContainer h1, main .container .books .textContainer h2 {
+    font-size: 22px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .container .books .textContainer {
+    width: 34vw;
+    height: 18vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .container .books .textContainer {
+    width: 60vw;
+    height: 25vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .container .books .textContainer {
+    width: 80vw;
+    height: 35vw;
+  }
+}
+main .container .books .textContainer button {
+  width: 8vw;
+  height: 3vw;
+  background-color: rgb(255, 169, 40);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1700px) {
+  main .container .books .textContainer button {
+    margin-top: 5px;
+    width: 7vw;
+    height: 2.5vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .container .books .textContainer button {
+    width: 10vw;
+    height: 4vw;
+    padding-bottom: 5px;
+    margin-bottom: 3vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .container .books .textContainer button {
+    width: 20vw;
+    height: 50px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .container .books .textContainer button {
+    width: 25vw;
+    height: 20vw;
+  }
+}
+main .container .books .textContainer button:hover {
+  color: white;
+  background-color: black;
+  transition: 0.7s;
+}
+main .container .books .textContainer h1 {
+  white-space: nowrap;
+  color: rgb(255, 169, 40);
+}
+main .leftContact {
+  width: 4vw;
+  height: 16vw;
+  border-radius: 0px 10px 10px 0px;
+  position: fixed;
+  padding-left: 8px;
+  transform: translate(-48vw, -54vw);
+  background-color: rgb(255, 169, 40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1700px) {
+  main .leftContact {
+    width: 4.5vw;
+    height: 16vw;
+    transform: translate(-48vw, -96.5vw);
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .leftContact {
+    width: 10vw;
+    height: 37vw;
+    border-radius: 0px 10px 10px 0px;
+    transform: translate(-48vw, -400.5vw);
+  }
+}
+@media screen and (max-width: 450px) {
+  main .leftContact {
+    width: 9vw;
+    height: 53vw;
+    transform: translate(-45.5vw, -614.5vw);
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+main .leftContact a i {
+  padding: 0 0 0.5vw 12px;
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+}
+main .leftContact a i:hover {
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 1700px) {
+  main .leftContact a i {
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .leftContact a i {
+    font-size: 4vw;
+    padding: 1vw 0 1vw 4vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .leftContact a i {
+    font-size: 6vw;
+    padding: 1.5vw 0 1.5vw 0vw;
+  }
+}
+
+.search-bar .search {
+  z-index: 0.5;
+  width: 3vw;
+  height: 2vw;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.searchContainer {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 50vh;
+  position: fixed;
+  transform: translateY(-200vw);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(69, 69, 69, 0.794);
+}
+.searchContainer input {
+  width: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    display: block;
+  }
+  label {
+    width: 10vw;
+  }
+}
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+.dark-mode .sun {
+  width: 15vw;
+  height: 15vw;
+  background-image: url(../media/moon_PNG25.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+.dark-mode footer {
+  background-color: #3c3c3c;
+}
+
+.dark-mode .books {
+  background-color: #2b2b2b;
+}
+
+.dark-mode .foto {
+  border-color: #ffffff;
+}
+
+.dark-mode .img {
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .textContainer button {
+  background-color: #ffffff;
+}
+
+.dark-mode .search-bar input {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Dark mode switch styles */
+.dark-mode-switch {
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.dark-mode-switch label {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ffffff;
+  border-radius: 17px;
+  position: relative;
+}
+
+.dark-mode-switch label::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  transition: transform 0.3s;
+  border: 2px solid black;
+}
+
+.dark-mode-switch input[type=checkbox] {
+  display: none;
+}
+
+.dark-mode-switch input[type=checkbox]:checked + label {
+  background-color: #000000;
+}
+
+.dark-mode-switch input[type=checkbox]:checked + label::before {
+  transform: translateX(26px);
+}
+
+.dark-mode main {
+  background-image: url(../media/stars.jpg);
+}
+.dark-mode main .leftContact {
+  background-color: #333333;
+}
+.dark-mode main .books img {
+  background-color: #333333;
+}
+.dark-mode main .books .textContainer button {
+  background-color: white;
+}
+.dark-mode main .books .textContainer button:hover {
+  border: 1px solid white;
+}
+.dark-mode main .books .textContainer button:hover h3 {
+  color: white;
+}
+.dark-mode main .books .textContainer button a h3 {
+  color: black;
+}
+
+.sun {
+  top: 8vh;
+  width: 15vw;
+  height: 15vw;
+  background-image: url(../media/sun.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 999999999;
+  left: 85vw;
+  transform: rotate(720deg);
+  transition: 1s;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+}
+
+.small {
+  height: 3vw;
+  transition: height 0.3s ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+  .small {
+    height: 8vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .small {
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .small {
+    height: 12vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .small {
+    height: 15vw;
+  }
+}
+.small nav {
+  height: 3vw;
+  transition: height 0.3s ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+  .small nav {
+    height: 8vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .small nav {
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .small nav {
+    height: 12vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .small nav {
+    height: 15vw;
+  }
+}
+
+body {
+  scrollbar-width: none;
+  scrollbar-color: #ffa928 #636363;
+}
+
+/* Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #636363;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffa928;
+  border-radius: -1px;
+  border: 3px solid #ffffff;
+}
+
+footer p span {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

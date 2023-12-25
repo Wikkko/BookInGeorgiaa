@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BOOK IN GEORGIA</title>
+        <link rel="shortcut icon" type="x-icon" href="./media/loggoo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./scss/main.css">
+        <link rel="stylesheet" href="./scss/contact.css">
+        
+    </head>
+<body>
+    <header class="header" id="header">
+        
+        <nav>
+            <button class="burger-menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+            <div class="logo"><a href="./index.html"><img src="./media/tbcLogo.svg" alt=""></a></div>
+            <div class="dark-mode-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle"></label>
+              </div>
+        </nav>
+
+        <div class="menu">
+            <div class="menu-container">
+                <ul class="menu-ul">
+                    <li> <a href="./index.html">მთავარი</a></li>
+                    <li> <a href="./booksPrice.html">მაღაზია</a></li>
+                    <li> <a href="#">კონტაქტები</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </header>    <div class="sun"></div>
+
+
+
+    <body>
+        <main>
+            <div class="sectionDiv">
+                <div>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>Conceptassistant@tbcbank.ge</p>
+                    <p>Conceptassistant@tbcbank.ge</p>
+                </div>
+
+                <div class="specialDiv">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>7 კოტე მარჯანიშვილის ქუჩა</p>
+                    <h1></h1>
+                    <a href="https://www.google.com/maps/place/%E1%83%97%E1%83%98%E1%83%91%E1%83%98%E1%83%A1%E1%83%98+%E1%83%99%E1%83%9D%E1%83%9C%E1%83%AA%E1%83%94%E1%83%9E%E1%83%A2%E1%83%98+-+TBC+Concept/@41.7086716,44.794415,18z/data=!4m6!3m5!1s0x40440daa2f2fa18d:0x4d33e12d151c36ea!8m2!3d41.7084833!4d44.7950453!16s%2Fg%2F11lr55xqsq?entry=ttu"><h2>ლოკაცია</h2></a>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+995 032 2 27 27 00</p>
+                    <p>+995 032 2 27 27 00</p>
+                    <h1></h1>
+                </div>
+
+            </div>
+        </main>
+    </body>
+
+
+
+
+
+    <script>
+        burger = document.querySelector('.burger-menu');
+        burger.onclick = function() {
+            navBar = document.querySelector('.menu')
+            navBar.classList.toggle("active")
+        }
+
+       
+
+
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const body = document.body;
+
+  darkModeToggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+  });
+
+        const header = document.getElementById('header');
+        const headerHeight = header.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 0) {
+                header.classList.add('small');
+                header.style.height = `${headerHeight - 100}px`;
+            } else {
+                header.classList.remove('small');
+            }
+        });
+    </script>
+
+</body>
+</html>
